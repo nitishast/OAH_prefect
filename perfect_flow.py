@@ -2,7 +2,7 @@ import prefect
 from prefect import flow, task
 from prefect.context import get_run_context
 
-from prefect.artifacts import create_link_artifact, create_table_artifact
+from prefect.artifacts import create_link_artifact
 from src import parse_excel, enrich_rules, generate_test_cases, add_keys  # Adjust import paths
 import logging
 import yaml
@@ -77,7 +77,7 @@ def save_parsed_rules(rules, config):
         run_context = get_run_context()
         if run_context:
             create_link_artifact(
-                key="parsed_rules_file",
+                key="parsed-rules-file",
                 # Remove the 'name' parameter
                 description="Link to the saved JSON file containing the parsed rules.",
                 link=os.path.abspath(filepath),  # Use 'link' instead of 'target'
@@ -104,7 +104,7 @@ def enrich_rules_task(config, rules):
         run_context = get_run_context()
         if run_context:
             create_link_artifact(
-                key="enriched_rules_file",
+                key="enriched-rules-file",
                 description="Link to the saved JSON file containing the enriched rules.",
                 link=os.path.abspath(config["constrains_processed_rules_file"]),
             )
@@ -128,7 +128,7 @@ def generate_test_cases_task(config):
         run_context = get_run_context()
         if run_context:
             create_link_artifact(
-                key="generated_test_cases_file",
+                key="generated-test-cases-file",
                 description="Link to the saved JSON file containing the generated test cases.",
                 link=os.path.abspath(config["generated_test_cases_file"]),
             )
@@ -142,19 +142,25 @@ def generate_test_cases_task(config):
 
 @task(name="Add Unique Keys", retries=3, retry_delay_seconds=60)
 def add_keys_task(config):
+    """Adds unique keys to the test cases and creates a link artifact."""
     try:
         from src import add_keys
-        add_keys.main(config)
+        # add_keys.main(config) #Removed and adding config now
+        
+        config = load_config()
+        add_keys.add_unique_keys(config["generated_test_cases_file"], config["test_case_keys_file"])
 
-        run_context = get_run_context()
+        run_context = get_run_context() #added run context to get a more precise tracking
         if run_context:
+            # Create a link artifact to the saved file: this is one of the easy implementation of artifacts, just link to the local files.
             create_link_artifact(
-                key="test_case_keys_file",
+                key="test-case-keys-file",
                 description="Link to the saved JSON file containing the test cases with unique keys.",
                 link=os.path.abspath(config["test_case_keys_file"]),
             )
         else:
             logging.warn("Skip creating the link as not running in prefect context")
+
         return True
     except Exception as e:
         logging.error(f"Error adding unique keys: {e}")
