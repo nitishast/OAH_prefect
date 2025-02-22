@@ -1,0 +1,100 @@
+{
+    "Rx BC Demographics": {
+        "fields": {
+            "Rx BC Email": {
+                "data_type": "String",
+                "mandatory_field": true,
+                "from_source": true,
+                "primary_key": true,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "Primary Key /Identity used for profile stitching in AEP."
+            },
+            "Rx BC First Name": {
+                "data_type": "String",
+                "mandatory_field": true,
+                "from_source": true,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "This field must always be populated(cannot be null or blank)."
+            },
+            "Rx BC Last Name": {
+                "data_type": "String",
+                "mandatory_field": true,
+                "from_source": true,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "This field must always be populated(cannot be null or blank)."
+            }
+        }
+    },
+    "Rx BC Email Event": {
+        "fields": {
+            "Rx BC Email": {
+                "data_type": "String",
+                "mandatory_field": true,
+                "from_source": true,
+                "primary_key": true,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "This field must always be populated(cannot be null or blank)."
+            },
+            "Rx BC Email Template Info": {
+                "data_type": "String",
+                "mandatory_field": false,
+                "from_source": false,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "This field can be populated or  null or blank."
+            },
+            "Rx BC Event ID": {
+                "data_type": "String",
+                "mandatory_field": true,
+                "from_source": true,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "This field must always be populated(cannot be null or blank)."
+            },
+            "Rx BC Event Type": {
+                "data_type": "String",
+                "mandatory_field": true,
+                "from_source": true,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "Values should be \"CREATE_NEW_USER\" or \"CREATE_MIGRATING_USER\""
+            },
+            "Rx BC New User Registration Link": {
+                "data_type": "String",
+                "mandatory_field": true,
+                "from_source": true,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "This field must always be populated(cannot be null or blank)."
+            },
+            "Rx BC Timestamp": {
+                "data_type": "Date",
+                "mandatory_field": false,
+                "from_source": false,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "Make sure timestamp format is accepted in AEP."
+            },
+            "Rx BC User Group": {
+                "data_type": "String",
+                "mandatory_field": false,
+                "from_source": false,
+                "primary_key": false,
+                "required_for_deployment": true,
+                "deployment_validation": true,
+                "business_rules": "This field can be populated or null or blank."
+            }
+        }
+    }
+}

@@ -1,0 +1,455 @@
+2025-02-21 18:24:59,493 - ERROR - Failed to generate test cases: [Errno 2] No such file or directory: 'data/constrains_processed_rules.json'
+2025-02-21 18:24:59,493 - ERROR - Application failed: [Errno 2] No such file or directory: 'data/constrains_processed_rules.json'
+2025-02-21 18:25:56,865 - INFO - Processing field 1/10: Rx BC Demographics.Rx BC Email
+2025-02-21 18:26:08,740 - INFO - Successfully generated 12 test cases
+2025-02-21 18:26:08,740 - INFO - Processing field 2/10: Rx BC Demographics.Rx BC First Name
+2025-02-21 18:26:13,345 - INFO - Successfully generated 11 test cases
+2025-02-21 18:26:13,345 - INFO - Processing field 3/10: Rx BC Demographics.Rx BC Last Name
+2025-02-21 18:26:18,017 - INFO - Successfully generated 11 test cases
+2025-02-21 18:26:18,017 - INFO - Processing field 4/10: Rx BC Email Event.Rx BC Email
+2025-02-21 18:26:24,023 - INFO - Successfully generated 13 test cases
+2025-02-21 18:26:24,023 - INFO - Processing field 5/10: Rx BC Email Event.Rx BC Email Template Info
+2025-02-21 18:26:28,823 - INFO - Successfully generated 10 test cases
+2025-02-21 18:26:28,823 - INFO - Processing field 6/10: Rx BC Email Event.Rx BC Event ID
+2025-02-21 18:26:29,173 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:29,520 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:30,082 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:30,082 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC Event ID after 3 attempts
+2025-02-21 18:26:30,083 - INFO - Processing field 7/10: Rx BC Email Event.Rx BC Event Type
+2025-02-21 18:26:30,852 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:31,464 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:31,768 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:31,769 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC Event Type after 3 attempts
+2025-02-21 18:26:31,769 - INFO - Processing field 8/10: Rx BC Email Event.Rx BC New User Registration Link
+2025-02-21 18:26:32,074 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:37,712 - INFO - Successfully generated 13 test cases
+2025-02-21 18:26:37,712 - INFO - Processing field 9/10: Rx BC Email Event.Rx BC Timestamp
+2025-02-21 18:26:38,033 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:38,335 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:38,673 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:38,674 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC Timestamp after 3 attempts
+2025-02-21 18:26:38,674 - INFO - Processing field 10/10: Rx BC Email Event.Rx BC User Group
+2025-02-21 18:26:39,041 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:39,451 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:39,962 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-21 18:26:39,963 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC User Group after 3 attempts
+2025-02-21 18:26:39,964 - INFO - Successfully saved test cases to data/generated_test_cases.json
+2025-02-21 18:26:39,964 - INFO - 
+Test Case Generation Summary
+==============================
+Total fields processed: 6
+Total test cases generated: 70
+Average test cases per field: 11.67
+Output file: data/generated_test_cases.json
+==============================
+2025-02-21 18:26:39,966 - INFO - Successfully saved updated test cases to data/test_case_with_keys.json
+2025-02-21 18:28:15,264 - INFO - Processing field 1/10: Rx BC Demographics.Rx BC Email
+2025-02-21 18:28:15,265 - ERROR - Failed to generate test cases: 'constraints'
+2025-02-21 18:28:15,265 - ERROR - Application failed: 'constraints'
+2025-02-21 18:47:34,289 - INFO - Processing field 1/10: Rx BC Demographics.Rx BC Email
+2025-02-21 18:47:47,228 - INFO - Successfully generated 15 test cases
+2025-02-21 18:47:47,228 - INFO - Processing field 2/10: Rx BC Demographics.Rx BC First Name
+2025-02-21 18:47:52,110 - INFO - Successfully generated 11 test cases
+2025-02-21 18:47:52,110 - INFO - Processing field 3/10: Rx BC Demographics.Rx BC Last Name
+2025-02-21 18:47:57,328 - INFO - Successfully generated 12 test cases
+2025-02-21 18:47:57,328 - INFO - Processing field 4/10: Rx BC Email Event.Rx BC Email
+2025-02-21 18:48:02,491 - INFO - Successfully generated 12 test cases
+2025-02-21 18:48:02,491 - INFO - Processing field 5/10: Rx BC Email Event.Rx BC Email Template Info
+2025-02-21 18:48:07,099 - INFO - Successfully generated 9 test cases
+2025-02-21 18:48:07,099 - INFO - Processing field 6/10: Rx BC Email Event.Rx BC Event ID
+2025-02-21 18:48:11,599 - INFO - Successfully generated 11 test cases
+2025-02-21 18:48:11,599 - INFO - Processing field 7/10: Rx BC Email Event.Rx BC Event Type
+2025-02-21 18:48:16,830 - INFO - Successfully generated 12 test cases
+2025-02-21 18:48:16,830 - INFO - Processing field 8/10: Rx BC Email Event.Rx BC New User Registration Link
+2025-02-21 18:48:21,852 - INFO - Successfully generated 11 test cases
+2025-02-21 18:48:21,852 - INFO - Processing field 9/10: Rx BC Email Event.Rx BC Timestamp
+2025-02-21 18:48:28,121 - WARNING - Test case 1 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,121 - WARNING - Test case 2 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,122 - WARNING - Test case 4 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,122 - WARNING - Test case 5 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,122 - WARNING - Test case 6 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,122 - WARNING - Test case 7 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,122 - WARNING - Test case 8 validation failed: Date input must be a string
+2025-02-21 18:48:28,122 - WARNING - Test case 10 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,122 - WARNING - Test case 11 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,122 - WARNING - Test case 12 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,123 - WARNING - Test case 13 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,123 - WARNING - Test case 14 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:48:28,123 - INFO - Successfully generated 2 test cases
+2025-02-21 18:48:28,123 - INFO - Processing field 10/10: Rx BC Email Event.Rx BC User Group
+2025-02-21 18:48:32,516 - INFO - Successfully generated 10 test cases
+2025-02-21 18:48:32,518 - INFO - Successfully saved test cases to data/generated_test_cases.json
+2025-02-21 18:48:32,519 - INFO - 
+Test Case Generation Summary
+==============================
+Total fields processed: 10
+Total test cases generated: 105
+Average test cases per field: 10.50
+Output file: data/generated_test_cases.json
+==============================
+2025-02-21 18:57:11,702 - INFO - Processing field 1/10: Rx BC Demographics.Rx BC Email
+2025-02-21 18:57:24,540 - INFO - Successfully generated 14 test cases
+2025-02-21 18:57:24,540 - INFO - Processing field 2/10: Rx BC Demographics.Rx BC First Name
+2025-02-21 18:57:29,559 - INFO - Successfully generated 13 test cases
+2025-02-21 18:57:29,559 - INFO - Processing field 3/10: Rx BC Demographics.Rx BC Last Name
+2025-02-21 18:57:34,535 - INFO - Successfully generated 12 test cases
+2025-02-21 18:57:34,535 - INFO - Processing field 4/10: Rx BC Email Event.Rx BC Email
+2025-02-21 18:57:39,693 - INFO - Successfully generated 12 test cases
+2025-02-21 18:57:39,693 - INFO - Processing field 5/10: Rx BC Email Event.Rx BC Email Template Info
+2025-02-21 18:57:44,302 - INFO - Successfully generated 10 test cases
+2025-02-21 18:57:44,302 - INFO - Processing field 6/10: Rx BC Email Event.Rx BC Event ID
+2025-02-21 18:57:48,897 - INFO - Successfully generated 11 test cases
+2025-02-21 18:57:48,897 - INFO - Processing field 7/10: Rx BC Email Event.Rx BC Event Type
+2025-02-21 18:57:54,029 - INFO - Successfully generated 12 test cases
+2025-02-21 18:57:54,030 - INFO - Processing field 8/10: Rx BC Email Event.Rx BC New User Registration Link
+2025-02-21 18:57:58,843 - INFO - Successfully generated 10 test cases
+2025-02-21 18:57:58,843 - INFO - Processing field 9/10: Rx BC Email Event.Rx BC Timestamp
+2025-02-21 18:58:05,298 - WARNING - Test case 1 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,298 - WARNING - Test case 2 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,298 - WARNING - Test case 3 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,298 - WARNING - Test case 4 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,298 - WARNING - Test case 5 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,298 - WARNING - Test case 7 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,298 - WARNING - Test case 8 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,299 - WARNING - Test case 9 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,299 - WARNING - Test case 10 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,299 - WARNING - Test case 11 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,299 - WARNING - Test case 12 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,299 - WARNING - Test case 13 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 18:58:05,299 - WARNING - Test case 14 validation failed: Date input must be a string
+2025-02-21 18:58:05,299 - WARNING - Test case 15 validation failed: Date input must be a string
+2025-02-21 18:58:05,299 - INFO - Successfully generated 1 test cases
+2025-02-21 18:58:05,299 - INFO - Processing field 10/10: Rx BC Email Event.Rx BC User Group
+2025-02-21 18:58:11,130 - INFO - Successfully generated 14 test cases
+2025-02-21 18:58:11,132 - INFO - Successfully saved test cases to data/generated_test_cases.json
+2025-02-21 18:58:11,132 - INFO - 
+Test Case Generation Summary
+==============================
+Total fields processed: 10
+Total test cases generated: 109
+Average test cases per field: 10.90
+Output file: data/generated_test_cases.json
+==============================
+2025-02-21 18:58:11,136 - INFO - Successfully saved updated test cases to data/test_case_with_keys.json
+2025-02-21 23:49:37,002 - INFO - Processing field 1/10: Rx BC Demographics.Rx BC Email
+2025-02-21 23:49:49,263 - INFO - Successfully generated 12 test cases
+2025-02-21 23:49:49,263 - INFO - Processing field 2/10: Rx BC Demographics.Rx BC First Name
+2025-02-21 23:49:54,605 - INFO - Successfully generated 13 test cases
+2025-02-21 23:49:54,605 - INFO - Processing field 3/10: Rx BC Demographics.Rx BC Last Name
+2025-02-21 23:49:59,649 - INFO - Successfully generated 12 test cases
+2025-02-21 23:49:59,650 - INFO - Processing field 4/10: Rx BC Email Event.Rx BC Email
+2025-02-21 23:50:05,924 - INFO - Successfully generated 15 test cases
+2025-02-21 23:50:05,924 - INFO - Processing field 5/10: Rx BC Email Event.Rx BC Email Template Info
+2025-02-21 23:50:11,254 - INFO - Successfully generated 10 test cases
+2025-02-21 23:50:11,255 - INFO - Processing field 6/10: Rx BC Email Event.Rx BC Event ID
+2025-02-21 23:50:16,601 - INFO - Successfully generated 12 test cases
+2025-02-21 23:50:16,601 - INFO - Processing field 7/10: Rx BC Email Event.Rx BC Event Type
+2025-02-21 23:50:21,638 - INFO - Successfully generated 12 test cases
+2025-02-21 23:50:21,638 - INFO - Processing field 8/10: Rx BC Email Event.Rx BC New User Registration Link
+2025-02-21 23:50:26,150 - INFO - Successfully generated 11 test cases
+2025-02-21 23:50:26,150 - INFO - Processing field 9/10: Rx BC Email Event.Rx BC Timestamp
+2025-02-21 23:50:31,247 - WARNING - Test case 1 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,247 - WARNING - Test case 2 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,247 - WARNING - Test case 3 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,247 - WARNING - Test case 4 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,247 - WARNING - Test case 6 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,248 - WARNING - Test case 7 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,248 - WARNING - Test case 8 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,248 - WARNING - Test case 9 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,248 - WARNING - Test case 10 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,248 - WARNING - Test case 11 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-21 23:50:31,248 - WARNING - Test case 12 validation failed: Date input must be a string
+2025-02-21 23:50:31,248 - INFO - Successfully generated 1 test cases
+2025-02-21 23:50:31,248 - INFO - Processing field 10/10: Rx BC Email Event.Rx BC User Group
+2025-02-21 23:50:35,769 - INFO - Successfully generated 10 test cases
+2025-02-21 23:50:35,770 - INFO - Created backup: data/generated_test_cases.json.20250221_235035.bak
+2025-02-21 23:50:35,773 - INFO - Successfully saved test cases to data/generated_test_cases.json
+2025-02-21 23:50:35,773 - INFO - 
+Test Case Generation Summary
+==============================
+Total fields processed: 10
+Total test cases generated: 108
+Average test cases per field: 10.80
+Output file: data/generated_test_cases.json
+==============================
+2025-02-22 09:40:31,786 - INFO - Processing field 1/10: Rx BC Demographics.Rx BC Email
+2025-02-22 09:40:44,704 - INFO - Successfully generated 15 test cases
+2025-02-22 09:40:44,704 - INFO - Processing field 2/10: Rx BC Demographics.Rx BC First Name
+2025-02-22 09:40:49,715 - INFO - Successfully generated 13 test cases
+2025-02-22 09:40:49,715 - INFO - Processing field 3/10: Rx BC Demographics.Rx BC Last Name
+2025-02-22 09:40:54,927 - INFO - Successfully generated 13 test cases
+2025-02-22 09:40:54,927 - INFO - Processing field 4/10: Rx BC Email Event.Rx BC Email
+2025-02-22 09:40:59,532 - INFO - Successfully generated 11 test cases
+2025-02-22 09:40:59,536 - INFO - Processing field 5/10: Rx BC Email Event.Rx BC Email Template Info
+2025-02-22 09:41:04,094 - INFO - Successfully generated 10 test cases
+2025-02-22 09:41:04,094 - INFO - Processing field 6/10: Rx BC Email Event.Rx BC Event ID
+2025-02-22 09:41:08,439 - INFO - Successfully generated 10 test cases
+2025-02-22 09:41:08,439 - INFO - Processing field 7/10: Rx BC Email Event.Rx BC Event Type
+2025-02-22 09:41:08,856 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:10,072 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:10,492 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:10,492 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC Event Type after 3 attempts
+2025-02-22 09:41:10,492 - INFO - Processing field 8/10: Rx BC Email Event.Rx BC New User Registration Link
+2025-02-22 09:41:11,103 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:11,715 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:12,024 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:12,024 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC New User Registration Link after 3 attempts
+2025-02-22 09:41:12,024 - INFO - Processing field 9/10: Rx BC Email Event.Rx BC Timestamp
+2025-02-22 09:41:12,435 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:12,742 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:13,042 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:13,042 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC Timestamp after 3 attempts
+2025-02-22 09:41:13,042 - INFO - Processing field 10/10: Rx BC Email Event.Rx BC User Group
+2025-02-22 09:41:13,346 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:13,767 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:14,064 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 09:41:14,064 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC User Group after 3 attempts
+2025-02-22 09:41:14,065 - INFO - Created backup: data/generated_test_cases.json.20250222_094114.bak
+2025-02-22 09:41:14,066 - INFO - Successfully saved test cases to data/generated_test_cases.json
+2025-02-22 09:41:14,066 - INFO - 
+Test Case Generation Summary
+==============================
+Total fields processed: 6
+Total test cases generated: 72
+Average test cases per field: 12.00
+Output file: data/generated_test_cases.json
+==============================
+2025-02-22 15:36:10,597 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-02-22 15:37:02,566 - INFO - Processing field 1/10: Rx BC Demographics.Rx BC Email
+2025-02-22 15:37:15,826 - ERROR - JSON parsing error: Expecting ',' delimiter: line 66 column 17 (char 2055) - Raw response: ```json
+[
+  {
+    "test_case": "TC001_Valid_Basic",
+    "description": "Basic valid email input",
+    "expected_result": "Pass",
+    "input": "test@example.com"
+  },
+  {
+    "test_case": "TC002_Valid_LongEmail",
+    "description": "Valid email with a long local-part",
+    "expected_result": "Pass",
+    "input": "verylongusername1234567890@example.com"
+  },
+  {
+    "test_case": "TC003_Valid_MultipleDots",
+    "description": "Valid email with multiple dots in local-part",
+    "expected_result": "Pass",
+    "input": "user.name.another@example.com"
+  },
+  {
+    "test_case": "TC004_Valid_PlusSign",
+    "description": "Valid email with plus sign in local-part",
+    "expected_result": "Pass",
+    "input": "user+alias@example.com"
+  },
+  {
+    "test_case": "TC005_Invalid_NoAtSymbol",
+    "description": "Invalid email - missing @ symbol",
+    "expected_result": "Fail",
+    "input": "test example.com"
+  },
+  {
+    "test_case": "TC006_Invalid_NoDomain",
+    "description": "Invalid email - missing domain",
+    "expected_result": "Fail",
+    "input": "test@"
+  },
+  {
+    "test_case": "TC007_Invalid_InvalidCharacters",
+    "description": "Invalid email - contains invalid characters",
+    "expected_result": "Fail",
+    "input": "test!@example.com"
+  },
+  {
+    "test_case": "TC008_Invalid_TooLong",
+    "description": "Invalid email - exceeds length limit (assuming a limit of 254 characters)",
+    "expected_result": "Fail",
+    "input": "thisisaveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongusername@example.com"
+  },
+  {
+    "test_case": "TC009_Null_Email",
+    "description": "Null email input",
+    "expected_result": "Fail",
+    "input": null
+  },
+  {
+    "test_case": "TC010_Empty_Email",
+    "description": "Empty email input",
+    "expected_result": "Fail",
+    "input": ""
+  },
+  {
+    "test_case": "TC011_Boundary_MaxEmailLength",
+    "description": "Email at maximum allowed length (assuming a limit of 254 characters)",
+    "expected_result": "Pass",
+    "input": "a".repeat(64) + "@example.com"
+  },
+  {
+    "test_case": "TC012_Edge_SpecialCharactersInDomain",
+    "description": "Email with special characters (allowed) in domain",
+    "expected_result": "Pass",
+    "input": "test@example.co.uk"
+  },
+  {
+    "test_case": "TC013_Edge_NumericDomain",
+    "description": "Email with numeric domain",
+    "expected_result": "Pass",
+    "input": "test@123.com"
+  },
+  {
+    "test_case": "TC014_Type_Number",
+    "description": "Input is a number instead of a string",
+    "expected_result": "Fail",
+    "input": 123
+  },
+  {
+    "test_case": "TC015_Type_Boolean",
+    "description": "Input is a boolean value",
+    "expected_result": "Fail",
+    "input": true
+  }
+]
+```
+
+2025-02-22 15:37:15,827 - WARNING - Attempt 1: Failed to generate valid test cases
+2025-02-22 15:37:21,557 - INFO - Successfully generated 13 test cases
+2025-02-22 15:37:21,558 - INFO - Processing field 2/10: Rx BC Demographics.Rx BC First Name
+2025-02-22 15:37:27,087 - ERROR - JSON parsing error: Expecting ',' delimiter: line 54 column 20 (char 1431) - Raw response: ```json
+[
+  {
+    "test_case": "TC001_Valid_Basic",
+    "description": "Basic valid input test",
+    "expected_result": "Pass",
+    "input": "John"
+  },
+  {
+    "test_case": "TC002_Valid_LongName",
+    "description": "Valid input with a long name",
+    "expected_result": "Pass",
+    "input": "JohnathanChristopherSmith"
+  },
+  {
+    "test_case": "TC003_Valid_SpecialCharacters",
+    "description": "Valid input with special characters (allowed)",
+    "expected_result": "Pass",
+    "input": "O'Reilly"
+  },
+  {
+    "test_case": "TC004_Invalid_Null",
+    "description": "Null input",
+    "expected_result": "Fail",
+    "input": null
+  },
+  {
+    "test_case": "TC005_Invalid_Empty",
+    "description": "Empty string input",
+    "expected_result": "Fail",
+    "input": ""
+  },
+  {
+    "test_case": "TC006_Invalid_Whitespace",
+    "description": "Input with only whitespace",
+    "expected_result": "Fail",
+    "input": "   "
+  },
+  {
+    "test_case": "TC007_Invalid_NumbersOnly",
+    "description": "Input with only numbers",
+    "expected_result": "Fail",
+    "input": "12345"
+  },
+  {
+    "test_case": "TC008_Invalid_SpecialCharacters",
+    "description": "Input with disallowed special characters",
+    "expected_result": "Fail",
+    "input": "John!!@#"
+  },
+  {
+    "test_case": "TC009_Boundary_Maxlength",
+    "description": "Input at the maximum length (assuming a reasonable limit)",
+    "expected_result": "Pass",
+    "input": "John".repeat(10)
+  },
+  {
+    "test_case": "TC010_Boundary_ExceedingMaxLength",
+    "description": "Input exceeding the maximum length (assuming a reasonable limit)",
+    "expected_result": "Fail",
+    "input": "John".repeat(11)
+
+  },
+  {
+    "test_case": "TC011_Edge_LeadingTrailingSpaces",
+    "description": "Input with leading and trailing spaces",
+    "expected_result": "Fail",
+    "input": "  John  "
+  },
+    {
+    "test_case": "TC012_Edge_OnlyOneCharacter",
+    "description": "Input with only one character",
+    "expected_result": "Pass",
+    "input": "J"
+  },
+  {
+    "test_case": "TC013_Type_Number",
+    "description": "Input of numeric type",
+    "expected_result": "Fail",
+    "input": 123
+  },
+  {
+    "test_case": "TC014_Type_Boolean",
+    "description": "Input of boolean type",
+    "expected_result": "Fail",
+    "input": true
+  }
+]
+```
+
+2025-02-22 15:37:27,087 - WARNING - Attempt 1: Failed to generate valid test cases
+2025-02-22 15:37:32,329 - INFO - Successfully generated 12 test cases
+2025-02-22 15:37:32,330 - INFO - Processing field 3/10: Rx BC Demographics.Rx BC Last Name
+2025-02-22 15:37:37,945 - INFO - Successfully generated 14 test cases
+2025-02-22 15:37:37,945 - INFO - Processing field 4/10: Rx BC Email Event.Rx BC Email
+2025-02-22 15:37:38,357 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 15:37:39,680 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 15:37:40,093 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 15:37:40,094 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC Email after 3 attempts
+2025-02-22 15:37:40,094 - INFO - Processing field 5/10: Rx BC Email Event.Rx BC Email Template Info
+2025-02-22 15:37:41,421 - ERROR - Attempt 1 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 15:37:41,830 - ERROR - Attempt 2 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 15:37:42,138 - ERROR - Attempt 3 failed: 429 Resource has been exhausted (e.g. check quota).
+2025-02-22 15:37:42,138 - ERROR - Failed to generate test cases for Rx BC Email Event.Rx BC Email Template Info after 3 attempts
+2025-02-22 15:37:42,138 - INFO - Processing field 6/10: Rx BC Email Event.Rx BC Event ID
+2025-02-22 15:37:46,662 - INFO - Successfully generated 10 test cases
+2025-02-22 15:37:46,663 - INFO - Processing field 7/10: Rx BC Email Event.Rx BC Event Type
+2025-02-22 15:37:51,764 - INFO - Successfully generated 12 test cases
+2025-02-22 15:37:51,764 - INFO - Processing field 8/10: Rx BC Email Event.Rx BC New User Registration Link
+2025-02-22 15:37:56,172 - INFO - Successfully generated 10 test cases
+2025-02-22 15:37:56,172 - INFO - Processing field 9/10: Rx BC Email Event.Rx BC Timestamp
+2025-02-22 15:38:02,722 - WARNING - Test case 1 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,723 - WARNING - Test case 2 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,754 - WARNING - Test case 3 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,754 - WARNING - Test case 4 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,754 - WARNING - Test case 5 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,754 - WARNING - Test case 6 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,754 - WARNING - Test case 7 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,754 - WARNING - Test case 9 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,755 - WARNING - Test case 10 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,755 - WARNING - Test case 11 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,755 - WARNING - Test case 12 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,755 - WARNING - Test case 13 validation failed: Invalid date format. Expected formats: ['%Y-%m-%d %H:%M:%S', '%Y/%m/%d %H:%M:%S', '%m/%d/%Y %H:%M:%S']
+2025-02-22 15:38:02,755 - WARNING - Test case 14 validation failed: Date input must be a string
+2025-02-22 15:38:02,755 - WARNING - Test case 15 validation failed: Date input must be a string
+2025-02-22 15:38:02,755 - INFO - Successfully generated 1 test cases
+2025-02-22 15:38:02,755 - INFO - Processing field 10/10: Rx BC Email Event.Rx BC User Group
+2025-02-22 15:38:07,022 - INFO - Successfully generated 10 test cases
+2025-02-22 15:38:07,023 - INFO - Created backup: data/generated_test_cases.json.20250222_153807.bak
+2025-02-22 15:38:07,024 - INFO - Successfully saved test cases to data/generated_test_cases.json
+2025-02-22 15:38:07,024 - INFO - 
+Test Case Generation Summary
+==============================
+Total fields processed: 8
+Total test cases generated: 82
+Average test cases per field: 10.25
+Output file: data/generated_test_cases.json
+==============================
