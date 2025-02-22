@@ -289,15 +289,11 @@ IMPORTANT: Return ONLY the JSON array. No additional text or explanation."""
 def main(config):
     try:
         generator = TestCaseGenerator()
-        # generator.generate_test_cases(  #Modified and Added Llm config argument
-        #     generator.config["processed_rules_file"],
-        #     generator.config["generated_test_cases_file"]
-        # )
-        llm_client = llm.initialize_llm(config) #loading llm here
+        llm_client = llm.initialize_llm(config)
         generator.generate_test_cases(
             generator.config["constrains_processed_rules_file"],
             generator.config["generated_test_cases_file"],
-            llm_client  # Pass the initialized LLM client to generate_test_cases
+            llm_client
         )
     except Exception as e:
         logging.error(f"Application failed: {str(e)}")

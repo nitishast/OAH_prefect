@@ -68,22 +68,19 @@ def validate_parsed_rules_task(rules):
         logging.error(f"Validation failed: {e}")
         raise
 
-@task(name="Save Parsed Rules", retries=1)  # Simple save, no retries needed
+@task(name="Save Parsed Rules", retries=1)
 def save_parsed_rules(rules, config):
-    """Saves the parsed rules to a file and creates a Prefect artifact."""
     try:
         filepath = config.get("processed_rules_file")
         parse_excel.save_rules(rules, filepath)
 
-        # Create a link artifact to the saved file: this is one of the easy implementation of artifacts, just link to the local files.
-        run_context = get_run_context() #added run context to get a more precise tracking
-        
+        run_context = get_run_context()
         if run_context:
             create_link_artifact(
                 key="parsed_rules_file",
-                name="Parsed Rules File",
+                # Remove the 'name' parameter
                 description="Link to the saved JSON file containing the parsed rules.",
-                target=os.path.abspath(filepath),  # Use absolute path
+                link=os.path.abspath(filepath),  # Use 'link' instead of 'target'
             )
         else:
             logging.warn("Skip creating the link as not running in prefect context")
@@ -96,50 +93,44 @@ def save_parsed_rules(rules, config):
 
 @task(name="Enrich Rules with Constraints", retries=3, retry_delay_seconds=60)
 def enrich_rules_task(config, rules):
-    """Enriches rules with constraints using LLM."""
     try:
         config["processed_rules_file"] = "data/temp_rules.json"
         output_file = config.get("constrains_processed_rules_file")
         with open(output_file, "w") as f:
-            json.dump(rules, f, indent=4) # saving this as json file
-        from src import enrich_rules # Importing here to make it accessible and update
+            json.dump(rules, f, indent=4)
+        from src import enrich_rules
         enrich_rules.enrich_rules(config)
 
-        run_context = get_run_context() #added run context to get a more precise tracking
-        
+        run_context = get_run_context()
         if run_context:
-            # Create a link artifact to the saved file: this is one of the easy implementation of artifacts, just link to the local files.
             create_link_artifact(
                 key="enriched_rules_file",
-                name="Enriched Rules File",
                 description="Link to the saved JSON file containing the enriched rules.",
-                target=os.path.abspath(config["constrains_processed_rules_file"]),  # Use absolute path
+                link=os.path.abspath(config["constrains_processed_rules_file"]),
             )
         else:
             logging.warn("Skip creating the link as not running in prefect context")
-        return True  # Indicate success
+        return True
     except Exception as e:
         logging.error(f"Error enriching rules: {e}")
         raise
 
 @task(name="Generate Test Cases", retries=3, retry_delay_seconds=60)
 def generate_test_cases_task(config):
-    """Generates test cases and creates an artifact."""
     try:
-        from src import llm # Import llm inside to make it accessible
-        llm_client = llm.initialize_llm(config) #load LLM config here
+        from src import llm
+        llm_client = llm.initialize_llm(config)
 
         from src import generate_test_cases
-        generate_test_cases.main(config, llm_client=llm_client) #call main with llm_client
-        run_context = get_run_context() #added run context to get a more precise tracking
-        
+        # Remove llm_client argument from main() call
+        generate_test_cases.main(config)
+
+        run_context = get_run_context()
         if run_context:
-            # Create a link artifact to the saved file: this is one of the easy implementation of artifacts, just link to the local files.
             create_link_artifact(
                 key="generated_test_cases_file",
-                name="Generated Test Cases File",
                 description="Link to the saved JSON file containing the generated test cases.",
-                target=os.path.abspath(config["generated_test_cases_file"]),  # Use absolute path
+                link=os.path.abspath(config["generated_test_cases_file"]),
             )
         else:
             logging.warn("Skip creating the link as not running in prefect context")
@@ -148,25 +139,22 @@ def generate_test_cases_task(config):
         logging.error(f"Error generating test cases: {e}")
         raise
 
+
 @task(name="Add Unique Keys", retries=3, retry_delay_seconds=60)
 def add_keys_task(config):
-    """Adds unique keys to the test cases and creates a link artifact."""
     try:
-        from src import add_keys # Import add keys inside to make it accessible
-        add_keys.main(config) #call main with the config file now 
+        from src import add_keys
+        add_keys.main(config)
 
-        run_context = get_run_context() #added run context to get a more precise tracking
+        run_context = get_run_context()
         if run_context:
-            # Create a link artifact to the saved file: this is one of the easy implementation of artifacts, just link to the local files.
             create_link_artifact(
                 key="test_case_keys_file",
-                name="Test Case Keys File",
                 description="Link to the saved JSON file containing the test cases with unique keys.",
-                target=os.path.abspath(config["test_case_keys_file"]),  # Use absolute path
+                link=os.path.abspath(config["test_case_keys_file"]),
             )
         else:
             logging.warn("Skip creating the link as not running in prefect context")
-
         return True
     except Exception as e:
         logging.error(f"Error adding unique keys: {e}")
