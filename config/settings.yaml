@@ -12,3 +12,5 @@ azure_openai_endpoint: "https://prod-1.services.unitedaistudio.uhg.com/aoai-shar
 deployment_name: "gpt-4o_2024-05-13"
 model_name: "gpt-4o"
 project_id: "0bef8880-4e98-413c-bc0b-41c280fd1b2a"
+# api_use : "gemini" #openai
+api_use : "openai"
